@@ -1,6 +1,6 @@
 ---
 title: Larry Hudson
-layout: home.liquid
+layout: layouts/home.njk
 ---
 
 Hi! This is my personal site. I'm a web developer interested in:

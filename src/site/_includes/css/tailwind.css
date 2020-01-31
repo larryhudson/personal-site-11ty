@@ -1,0 +1,33 @@
+/* purgecss start ignore */
+@tailwind  base;
+/* purgecss end ignore */
+
+body {
+    @apply leading-normal text-lg;
+}
+
+p {
+    @apply mb-4;
+}
+
+ul {
+    @apply list-disc pl-5 mb-2;
+}
+
+a {
+    @apply text-red-800 underline;
+}
+
+li {
+    @apply pl-2 mb-2;
+}
+
+h2 {
+    @apply text-2xl mt-4 mb-2;
+}
+
+/* purgecss start ignore */
+@tailwind  components;
+/* purgecss end ignore */
+
+@tailwind utilities;

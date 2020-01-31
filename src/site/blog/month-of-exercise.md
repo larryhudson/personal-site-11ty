@@ -1,5 +1,5 @@
 ---
-layout: post.liquid
+layout: layouts/post.njk
 title: A month of daily exercise
 date: 2020-01-31
 tags: post

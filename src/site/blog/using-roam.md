@@ -1,5 +1,5 @@
 ---
-layout: post.liquid
+layout: layouts/post.njk
 title: Using Roam
 date: 2020-01-17
 tags: post
