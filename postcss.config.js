@@ -1,18 +1,32 @@
-const purgecss = require('@fullhuman/postcss-purgecss')({
+const tailwindcss = require('tailwindcss')
+const purgecss = require('@fullhuman/postcss-purgecss')
+const cssnano = require('cssnano')
+const autoprefixer = require('autoprefixer')
 
-    // Specify the paths to all of the template files in your project
-    content: [
-      './src/site/**/*.njk'
-    ],
-  
-    // Include any special characters you're using in this regular expression
-    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
-  })
-  
-  module.exports = {
-    plugins: [
-      require('tailwindcss'),
-      require('autoprefixer'),
-      ...process.env.NODE_ENV === 'production' ? [purgecss,  require('cssnano')] : []
-    ]
-  };
+const plugins = [
+                  autoprefixer,
+                  tailwindcss,
+                  cssnano({ preset: 'default', }),
+                ]
+
+if (process.env.NODE_ENV === 'production') {
+  plugins.push(
+    purgecss({
+      content: ['./dist/**/*.html'],
+      extractors: [
+        {
+          extractor: class TailwindExtractor {
+            static extract(content) {
+              return content.match(/[A-Za-z0-9-_:\/]+/g) || []
+            }
+          },
+          extensions: ['css', 'html'],
+        },
+      ]
+    })
+  )
+}
+
+module.exports = {
+  plugins
+}
