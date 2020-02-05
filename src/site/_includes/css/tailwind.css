@@ -3,15 +3,15 @@
 /* purgecss end ignore */
 
 body {
-    @apply leading-normal text-lg;
+    @apply leading-relaxed text-lg;
 }
 
 p {
-    @apply mb-4;
+    @apply mb-5;
 }
 
 ul {
-    @apply list-disc pl-5 mb-2;
+    @apply list-disc pl-5 mb-4;
 }
 
 a {
@@ -22,8 +22,16 @@ li {
     @apply pl-2 mb-2;
 }
 
+h1,h2,h3 {
+    @apply font-bold;
+}
+
 h2 {
     @apply text-2xl mt-4 mb-2;
+}
+
+h3 {
+    @apply text-xl mt-3 mb-1;
 }
 
 /* purgecss start ignore */

@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/css/styles.css">
-    <title>{{ title }} - Larry Hudson</title>
-  </head>
-  <body class="lg:max-w-3xl mx-auto">
+    <title>{% if page.url != "/" %}{{ title }} - {% endif %}Larry Hudson</title>
+  </head> 
+  <body class="lg:max-w-3xl mx-auto p-4">
     {% include 'partials/header.njk' %}
     <main>
       {{ content | safe }}
     </main>
-    <footer></footer>
+    {% include 'partials/footer.njk' %}
   </body>
 </html>

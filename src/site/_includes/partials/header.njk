@@ -1,6 +1,16 @@
 <header>
-  <h1 class="text-4xl">
+  <h1 class="text-4xl mb-2">
     {% if page.url != "/" %}<a href="/">Larry Hudson</a> {% else %} Larry Hudson
     {% endif %}
   </h1>
 </header>
+<nav>
+  <ul class="pl-0">
+    {% for link in navLinks %}
+    <li class="list-none inline pl-0 pr-2">
+      {% if page.url == link.url %}<span class="font-bold">{{link.title}}</span>
+      {% else %}<a href="{{link.url}}">{{link.title}}</a>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

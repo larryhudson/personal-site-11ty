@@ -1,8 +1,6 @@
 ---
-layout: layouts/post.njk
 title: A month of daily exercise
 date: 2020-01-31
-tags: post
 ---
 
 I'm not much of an exercise person, but I've managed to get into the habit of riding a stationary bike every day since 31 December. I've managed to fit it into my routine so that it's sustainable.
@@ -15,7 +13,7 @@ I didn't think I would like it as much as I do. Seeing my resting heart rate dro
 
 I've also been taking a photo of the meter on the bike, then logging it into a Google Sheets spreadsheet. It has a graph with distance in bars and a line graph of my average speed overlaid:
 
-![Exercise bike graph](/blog/images/exercise-bike-graph.png)
+![Exercise bike graph](/images/exercise-bike-graph.png)
 
 This has been great for keeping progression at the front of my mind - I don't want the graph to be pointing down, so I need to keep improving.
 
