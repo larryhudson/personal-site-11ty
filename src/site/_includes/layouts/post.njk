@@ -3,5 +3,6 @@ layout: layouts/base.njk
 ---
 
 <h2 class="mb-1">{{ title }}</h2>
-<p class="text-sm">Posted on {{ page.date | readableDate }}</p>
+<p class="text-sm">Posted on {{ page.date | readableDate }}. Tagged with {{ tags | filterOutPostTag | tagUrls | joinWithComma | safe }}</p>
+
 {{ content | safe }}

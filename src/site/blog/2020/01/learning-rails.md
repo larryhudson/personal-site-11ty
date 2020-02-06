@@ -1,6 +1,7 @@
 ---
 title: Learning Rails
 date: 2020-01-17
+tags: ['post', 'web development']
 ---
 
 Over the Christmas break I started playing around with [Ruby on Rails](https://rubyonrails.org/). I hadn't used it, or even the Ruby programming language before, so it was quite a challenge, but I'm really enjoying it.

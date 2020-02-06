@@ -1,6 +1,7 @@
 ---
 title: A month of daily exercise
 date: 2020-01-31
+tags: ['post', 'habits']
 ---
 
 I'm not much of an exercise person, but I've managed to get into the habit of riding a stationary bike every day since 31 December. I've managed to fit it into my routine so that it's sustainable.

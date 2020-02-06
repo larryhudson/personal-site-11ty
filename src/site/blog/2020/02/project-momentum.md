@@ -1,6 +1,7 @@
 ---
 title: Struggling with project momentum
 date: 2020-02-06
+tags: ['post', 'work']
 ---
 
 I've been working on a project on and off for the last year or so. I've gone through cycles of:

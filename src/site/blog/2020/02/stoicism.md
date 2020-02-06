@@ -1,6 +1,7 @@
 ---
 title: Stoicism and being happy with what you have
 date: 2020-02-06
+tags: ['post', 'habits']
 ---
 
 I've been focused on financial independence for the last couple of years - budgeting, living within your means, increasing your income while keeping your expenses low. I've done pretty well - I'm much more secure with my money now and I've got a buffer so I don't need to worry about this month or next month's bills etc.

@@ -3,35 +3,56 @@
 /* purgecss end ignore */
 
 body {
-    @apply leading-relaxed text-lg;
+  @apply leading-relaxed text-lg;
 }
 
 p {
-    @apply mb-5;
+  @apply mb-5;
 }
 
 ul {
-    @apply list-disc pl-5 mb-4;
+  @apply list-disc pl-5 mb-4;
 }
 
 a {
-    @apply text-red-800 underline;
+  @apply text-red-800 underline;
+}
+
+a:hover {
+  @apply text-teal-800;
+}
+
+a:focus {
+  outline: 2px dashed theme('colors.red.800');
+  outline-offset: 4px;
 }
 
 li {
-    @apply pl-2 mb-2;
+  @apply pl-2 mb-2;
 }
 
 h1,h2,h3 {
-    @apply font-bold;
+  @apply font-bold;
 }
 
 h2 {
-    @apply text-2xl mt-4 mb-2;
+  @apply text-2xl mt-4 mb-2;
 }
 
 h3 {
-    @apply text-xl mt-3 mb-1;
+  @apply text-xl mt-3 mb-1;
+}
+
+.pill {
+  @apply text-white bg-red-800 border-2 border-red-800 p-3 no-underline mr-3;
+}
+
+.pill:hover {
+  @apply border-2 bg-teal-800 text-white border-white border-dashed;
+}
+
+.pill.current {
+  @apply bg-teal-200 text-black border-2 border-dashed border-black;
 }
 
 /* purgecss start ignore */

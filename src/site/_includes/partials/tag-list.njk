@@ -1,0 +1,8 @@
+<h2 class="text-xl mb-5">Filter by tag</h2>
+<div class="flex">
+<p><a href="/blog/" class="pill {% if page.url == '/blog/' %}current{% endif %}">all</a></p>
+{% for tag in collections.tagList %}
+{% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
+<a href="{{ tagUrl | url }}" class="pill {% if page.url == tagUrl %}current{% endif %}">{{ tag }}</a>
+{% endfor %}
+</div>

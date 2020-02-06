@@ -1,6 +1,7 @@
 ---
 title: Playing with Eleventy
 date: 2020-01-17
+tags: ['post', 'web development']
 ---
 
 This thing is cool! I watched [Jason Lengstorf's stream with Zach Leatherman](https://www.youtube.com/watch?v=j8mJrhhdHWc) which is a good starting point for people who are new to Eleventy.

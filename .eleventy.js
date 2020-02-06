@@ -8,6 +8,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('default', 'layouts/base.njk');
   eleventyConfig.addLayoutAlias('conf', 'layouts/conf.njk');
 
+  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
+
   // a debug utility
   eleventyConfig.addFilter('dump', obj => {
     return util.inspect(obj)
@@ -24,6 +26,21 @@ module.exports = function(eleventyConfig) {
       zone: 'utc'
     }).toFormat('y-MM-dd');
   });
+
+  eleventyConfig.addFilter('filterOutPostTag', tags => {
+    return tags.filter(t => t !== "post")
+  })
+
+  eleventyConfig.addFilter('tagUrls', tags => {
+    return tags.map(tag => {
+      const tagUrl = `/blog/tags/${tag}`
+      return `<a href="${tagUrl}">${tag}</a>`
+    })
+  })
+
+  eleventyConfig.addFilter('joinWithComma', strings => {
+    return strings.join(", ")
+  })
 
   // Static assets to pass through
   eleventyConfig.addPassthroughCopy("./src/site/fonts");

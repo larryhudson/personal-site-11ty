@@ -1,6 +1,7 @@
 ---
 title: Deep work
 date: 2020-02-06
+tags: ['post', 'habits', 'knowledge']
 ---
 
 This week I listened to the audiobook of Cal Newport's book Deep Work.
