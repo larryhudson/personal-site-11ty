@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="/css/styles.css">
     <title>{% if page.url != "/" %}{{ title }} - {% endif %}Larry Hudson</title>
   </head> 
-  <body class="lg:max-w-3xl mx-auto p-4">
+  <body>
+    <div class="page">
     {% include 'partials/header.njk' %}
-    <main>
+    <main class="container mx-auto">
       {{ content | safe }}
     </main>
     {% include 'partials/footer.njk' %}
+    </div>
   </body>
 </html>

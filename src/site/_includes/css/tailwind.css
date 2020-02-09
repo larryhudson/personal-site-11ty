@@ -3,7 +3,7 @@
 /* purgecss end ignore */
 
 body {
-  @apply leading-relaxed text-lg;
+  @apply leading-relaxed text-lg bg-black text-white;
 }
 
 p {
@@ -15,15 +15,15 @@ ul {
 }
 
 a {
-  @apply text-red-800 underline;
+  @apply underline text-pink-300;
 }
 
 a:hover {
-  @apply text-teal-800;
+  @apply no-underline;
 }
 
 a:focus {
-  outline: 2px dashed theme('colors.red.800');
+  outline: 2px dashed;
   outline-offset: 4px;
 }
 
@@ -48,19 +48,19 @@ h4 {
 }
 
 .pill {
-  @apply text-white bg-red-800 p-3 no-underline rounded-lg;
+  @apply text-black bg-pink-300 p-3 no-underline rounded-lg;
 }
 
 .pill:hover {
-  @apply bg-teal-800 text-white underline;
+  @apply underline;
 }
 
 .pill.current {
-  @apply bg-teal-200 text-black border-2 border-dashed border-black;
+  @apply bg-white text-black border-2 border-dashed border-black;
 }
 
 pre {
-  @apply bg-gray-200 p-4 rounded-lg my-4 overflow-auto;
+  @apply p-4 rounded-lg my-4 overflow-auto border-2 border-gray-300 border-dashed;
 }
 
 img {
