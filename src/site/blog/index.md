@@ -4,7 +4,9 @@ layout: layouts/page.njk
 tags: 
 ---
 
-I'm trying to write more about the things that I'm thinking about, so that I can more clearly think about them.
+Here I'll write about the things that I'm learning or into at the moment.
+
+I'm writing these in the open - there are no drafts. This means a lot of these posts are unfinished, more like 'stubs' for me to come back to and expand later.
 
 {% include 'partials/tag-list.njk' %}
 

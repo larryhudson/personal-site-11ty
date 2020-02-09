@@ -11,7 +11,7 @@ p {
 }
 
 ul {
-  @apply list-disc pl-5 mb-4;
+  @apply list-disc pl-5 mb-6;
 }
 
 a {
@@ -31,28 +31,40 @@ li {
   @apply pl-2 mb-2;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
   @apply font-bold;
 }
 
 h2 {
-  @apply text-2xl mt-4 mb-2;
+  @apply text-2xl mt-6 mb-4;
 }
 
 h3 {
-  @apply text-xl mt-3 mb-1;
+  @apply text-xl mt-4 mb-3;
+}
+
+h4 {
+  @apply text-lg mt-2 mb-1;
 }
 
 .pill {
-  @apply text-white bg-red-800 border-2 border-red-800 p-3 no-underline mr-3;
+  @apply text-white bg-red-800 p-3 no-underline rounded-lg;
 }
 
 .pill:hover {
-  @apply border-2 bg-teal-800 text-white border-white border-dashed;
+  @apply bg-teal-800 text-white underline;
 }
 
 .pill.current {
   @apply bg-teal-200 text-black border-2 border-dashed border-black;
+}
+
+pre {
+  @apply bg-gray-200 p-4 rounded-lg my-4 overflow-auto;
+}
+
+img {
+  @apply my-6;
 }
 
 /* purgecss start ignore */

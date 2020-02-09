@@ -27,11 +27,11 @@ module.exports = function(eleventyConfig) {
     }).toFormat('y-MM-dd');
   });
 
-  eleventyConfig.addFilter('filterOutPostTag', tags => {
+  eleventyConfig.addFilter('withoutPostTag', tags => {
     return tags.filter(t => t !== "post")
   })
 
-  eleventyConfig.addFilter('tagUrls', tags => {
+  eleventyConfig.addFilter('transformToLinks', tags => {
     return tags.map(tag => {
       const tagUrl = `/blog/tags/${tag}`
       return `<a href="${tagUrl}">${tag}</a>`
