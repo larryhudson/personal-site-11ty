@@ -20,5 +20,5 @@ permalink: /blog/tags/{{ tag }}/
 
 <h2>Posts about {{ tag }}</h2>
 
-{% set postlist = collections[ tag ] %}
+{% set postlist = collections[ tag ] | livePosts %}
 {% include "partials/filtered-posts.njk" %}

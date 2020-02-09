@@ -15,6 +15,10 @@ module.exports = function(eleventyConfig) {
     return util.inspect(obj)
   });
 
+  eleventyConfig.addFilter('livePosts', posts => {
+    return posts.filter(p => p.data.status != 'hidden')
+  })
+
   // Date helpers
   eleventyConfig.addFilter('readableDate', dateObj => {
     return DateTime.fromJSDate(dateObj, {
