@@ -610,6 +610,11 @@ body {
   color: #fff;
 }
 
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 p {
   margin-bottom: 1.25rem;
 }

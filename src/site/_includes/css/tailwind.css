@@ -6,6 +6,10 @@ body {
   @apply leading-relaxed text-lg bg-black text-white;
 }
 
+.container {
+  @apply px-4;
+}
+
 p {
   @apply mb-5;
 }
