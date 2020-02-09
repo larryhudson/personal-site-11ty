@@ -15,7 +15,7 @@ ul {
 }
 
 a {
-  @apply underline text-pink-300;
+  @apply underline text-yellow-300;
 }
 
 a:hover {
@@ -48,7 +48,7 @@ h4 {
 }
 
 .pill {
-  @apply text-black bg-pink-300 p-3 no-underline rounded-lg;
+  @apply text-black bg-yellow-300 p-3 no-underline rounded-lg;
 }
 
 .pill:hover {

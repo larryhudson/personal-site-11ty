@@ -622,7 +622,7 @@ ul {
 
 a {
   text-decoration: underline;
-  color: #fbb6ce;
+  color: #faf089;
 }
 
 a:hover {
@@ -663,7 +663,7 @@ h4 {
 
 .pill {
   color: #242125;
-  background-color: #fbb6ce;
+  background-color: #faf089;
   padding: 0.75rem;
   text-decoration: none;
   border-radius: 0.5rem;
