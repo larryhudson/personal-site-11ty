@@ -1,7 +1,7 @@
 ---
 title: Refactoring and testing
 date: 2020-02-11
-tags: ['web development', 'testing', 'ruby']
+tags: ['post', 'web development', 'testing', 'ruby']
 ---
 
 I'm not a very careful programmer. I care more about getting things done and working on cool new ideas than meticulously refactoring and testing code.
