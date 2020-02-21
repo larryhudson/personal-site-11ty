@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/css/styles.css">
     <title>{% if page.url != "/" %}{{ title }} - {% endif %}Larry Hudson</title>
+    <meta property="og:site_name" content="Larry Hudson">
+    <meta property="og:title" content="{% if page.url != "/" %}{{ title }} - {% endif %}Larry Hudson">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://larryhudson.io{{ page.url }}">
+    <meta name="twitter:creator" content="@larryhudsondev">
+
   </head> 
   <body>
     <div class="page">
