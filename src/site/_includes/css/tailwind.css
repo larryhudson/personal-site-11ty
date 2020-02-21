@@ -14,8 +14,17 @@ p {
   @apply mb-5;
 }
 
+ul,
+ol {
+  @apply pl-5 mb-6;
+}
+
 ul {
-  @apply list-disc pl-5 mb-6;
+  @apply list-disc;
+}
+
+ol {
+  @apply list-decimal;
 }
 
 a {
