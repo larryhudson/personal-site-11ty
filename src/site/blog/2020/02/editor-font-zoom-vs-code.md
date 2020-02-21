@@ -10,7 +10,7 @@ Luckily, VS Code has separate command for just zooming the editor font. These sh
 - `Editor Font Zoom In`
 - `Editor Font Zoom Out`
 
-### Adjusting the keyboard shortcuts
+### Changing the keyboard shortcuts
 To change the keyboard shortcuts so they only zoom the editor font, you just need to:
 
 1. Open the Command Palette (`Control+Shift+P`) and type Keyboard Shortcuts. Choose `Preferences: Open Keyboard Shortcuts`.

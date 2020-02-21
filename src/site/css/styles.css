@@ -619,10 +619,18 @@ p {
   margin-bottom: 1.25rem;
 }
 
-ul {
-  list-style-type: disc;
+ul,
+ol {
   padding-left: 1.25rem;
   margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
 }
 
 a {
@@ -684,6 +692,12 @@ h4 {
   border-width: 2px;
   border-style: dashed;
   border-color: #242125;
+}
+
+code {
+  border-radius: 0.5rem;
+  background-color: #2d3748;
+  padding: 0.25rem;
 }
 
 pre {
