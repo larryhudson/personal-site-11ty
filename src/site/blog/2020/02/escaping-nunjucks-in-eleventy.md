@@ -11,20 +11,24 @@ A bit of context: I write these posts in Markdown files, but because Nunjucks is
 In the other post, I had code blocks demonstrating Nunjucks code:
 
 ```
-{% raw %}
-<ul>
+{% raw %}<ul>
     {% for tag in tags %}
         <li><a href="/blog/tags/{{tag}}">{{tag}}</a></li>
     {{% endfor %}
-</ul>
-{% endraw %}
+</ul>{% endraw %}
 ```
 
 But writing the code above between \``` and \``` did not work, because it was trying to execute the Nunjucks `for` loop.
 
-I found a similar issue on GitHub, but it didn't have 
+### The simplest solution
 
-### The solution
+The solution is to put `{{ "{% raw %}" | escape }}` immediately before your code block, and then `{{"{% endraw %} | escape }}` immediately after the code block. 
+
+Thanks to [Rob Dodson](https://github.com/larryhudson/personal-site-11ty/issues/3) and Sam from [Sysnomid](https://sysnomid.com/) for the suggestion.
+
+### A worse solution 
+
+I found the solution below before Rob and Sam suggested the better way. I thought I would keep it here for reference.
 
 The solution I've found is to wrap the Nunjucks tags (anything with either {{ "`{% %}` or `{{ }}`" | escape }}) in quotes, then in \{\{ \}\} brackets with the `escape` filter. This tells Nunjucks to deal with the content as a string, rather than as an actual Nunjucks directive.
 
