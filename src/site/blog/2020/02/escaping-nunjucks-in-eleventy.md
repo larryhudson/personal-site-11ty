@@ -11,11 +11,13 @@ A bit of context: I write these posts in Markdown files, but because Nunjucks is
 In the other post, I had code blocks demonstrating Nunjucks code:
 
 ```
+{% raw %}
 <ul>
-    {{ "{% for tag in tags %}" | escape }}
-        <li><a href="/blog/tags/{{ "{{tag}}" | escape }}">{{ "{{tag}}" | escape }}</a></li>
-    {{ "{% endfor %}" | escape }}
+    {% for tag in tags %}
+        <li><a href="/blog/tags/{{tag}}">{{tag}}</a></li>
+    {{% endfor %}
 </ul>
+{% endraw %}
 ```
 
 But writing the code above between \``` and \``` did not work, because it was trying to execute the Nunjucks `for` loop.
