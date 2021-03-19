@@ -22,7 +22,7 @@ But writing the code above between \``` and \``` did not work, because it was tr
 
 ### The simplest solution
 
-The solution is to put `{{ "{% raw %}" | escape }}` immediately before your code block, and then `{{"{% endraw %} | escape }}` immediately after the code block. 
+The solution is to put `{{ "{% raw %}" | escape }}` immediately before your code block, and then `{{ "{% endraw %}" | escape }}` immediately after the code block. 
 
 Thanks to [Rob Dodson](https://github.com/larryhudson/personal-site-11ty/issues/3) and Sam from [Sysnomid](https://sysnomid.com/) for the suggestion.
 
